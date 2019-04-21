@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/calculator/css/calculator.css">
+    <title>calculator</title>
+</head>
+
+<body>
+
+    <div>
+        <form name="display">
+            <input type="text" id="screen" name="screen" placeholder="0" disabled readonly>
+        </form>
+    </div>
+
+    <table class="calculator">
+
+        <tr>
+            <td><input type="button" class="key number" id="one" value="1" onclick="display_on_screen('1')"></td>
+            <td><input type="button" class="key number" id="two" value="2" onclick="display_on_screen('2')"></td>
+            <td><input type="button" class="key number" id="three" value="3" onclick="display_on_screen('3')"></td>
+            <td><input type="button" class="key number" id="four" value="4" onclick="display_on_screen('4')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="key number" id="five" value="5" onclick="display_on_screen('5')"></td>
+            <td><input type="button" class="key number" id="six" value="6" onclick="display_on_screen('6')"></td>
+            <td><input type="button" class="key number" id="seven" value="7" onclick="display_on_screen('7')"></td>
+            <td><input type="button" class="key number" id="eight" value="8" onclick="display_on_screen('8')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="key number" id="decimal" value="." onclick="display_on_screen('.')"></td>
+            <td><input type="button" class="key number" id="nine" value="9" onclick="display_on_screen('9')"></td>
+            <td><input type="button" class="key number" id="zero" value="0" onclick="display_on_screen('0')"></td>
+            <td><button type="button" class="key number" id="clear" value="C" onclick="clear_screen()">C</button></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="key operator" id="add" value="+" onclick="display_on_screen('+')"></td>
+            <td><input type="button" class="key number" id="sub" value="–" onclick="display_on_screen('-')"></td>
+            <td><input type="button" class="key number" id="mult" value="X" onclick="display_on_screen('*')"></td>
+            <td><input type="button" class="key number" id="div" value="÷" onclick="display_on_screen('/')"></td>
+        </tr>
+    </table>
+
+    <div>
+        <div class="key result" id="result" onclick="calculate_the_result()"><span>=</span></div>
+    </div>
+
+
+    <script src="function.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flights</title>
+
+    <link rel="stylesheet" href="css/rides.css">
+</head>
+
+<body>
+
+    <h1>TODOS TUS VUELOS</h1>
+    <p>ESCOGE TU PROXIMO DESTINO</p>
+
+    <div class="buttons">
+        <button type="button" onclick="mostrarVuelos('ultimos', 'todo')">Ultimos vuelos</button>
+        <button type="button" onclick="mostrarVuelos('todos', 'todo')">Todos los vuelos</button>
+        <button type="button" onclick="mostrarVuelos('todos', 'noEscala')">Vuelos sin escalas</button>
+    </div>
+
+    <article>
+        <h2>TRAYECTOS DISPONIBLES</h2>
+        <hr>
+        <p id="listaVuelos"></p>
+        <hr>
+        <p id="costeMedio"></p>
+
+    </article>
+
+    <div class="form">
+        <label>IDENTIFICADOR DE VUELO</label>
+        <input type="number" value="" id="idVuelo" min="0" max="99">
+        <button type="button" onclick="comprar()">Comprar</button>
+    </div>
+
+    <div id="user">
+        <h3>Buscar vuelos por precio:</h3>
+        <hr>
+        <input type="number" value="" id="costeVuelo" min="0" max="999">
+        <select name="tipoBusqueda" id="tipoBusqueda">
+                <option value="mas">Más caros</option>
+                <option value="igual">De igual precio</option>
+                <option value="menos">Más baratos</option>
+            </select>
+        <button type="button" onclick="buscar()">Buscar</button>
+    </div>
+
+    <div id="admin">
+        <button type="button" onclick="addVuelo()">Crear nuevo vuelo</button>
+        <button type="button" onclick="deleteVuelo()">Eliminar un vuelo</button>
+    </div>
+
+    <script src="rides.js"></script>
+
+</body>
+
+</html>

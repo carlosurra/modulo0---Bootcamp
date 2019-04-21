@@ -1,0 +1,95 @@
+*:focus {
+    outline: none !important
+}
+
+html {
+    background: #100a1c;
+    background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(59, 45, 45, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #211833 100%);
+    background-attachment: fixed;
+}
+
+body {
+    display: block;
+    margin: 0 auto;
+    padding: 10em 0 2em;
+    width: 400px;
+}
+
+.calculator td input {
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    font-style: bold;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border: solid;
+}
+
+.calculator td input:hover {
+    background-color: gray;
+}
+
+#screen {
+    padding: 15px 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50px;
+    width: 350px;
+    font-size: 40px;
+    font-style: bold;
+    color: black;
+}
+
+form {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 100px;
+    line-height: 100px;
+    background-color: white;
+    opacity: 0.2;
+    border-radius: 50px;
+    font-style: bold;
+    color: black;
+}
+
+.result span {
+    border: solid;
+    display: block;
+    text-align: center;
+    font-size: 85px;
+    width: 450px;
+    height: 100px;
+    line-height: 100px;
+    font-style: bold;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+.result span:hover {
+    background-color: grey;
+}
+
+#clear {
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    font-style: bold;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border: solid;
+}
+
+#clear:hover {
+    background-color: grey;
+}
